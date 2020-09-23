@@ -19,6 +19,7 @@
 .header__navbar-list {
     list-style: none;
     padding-left: 0;
+    margin-top: 4px;
 }
 
 
@@ -44,6 +45,15 @@
 }
 
 
+/* re chuot chuyen mau */
+
+.header__navbar-item:hover,
+.header__navbar-item-link:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
 /* In dam nut Dang ky, Dang nhap */
 
 .header__navbar-item--strong {
@@ -62,4 +72,9 @@
     right: -11px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.header__navbar-icon-link {
+    color: var(--white-color);
+    text-decoration: none;
 }
