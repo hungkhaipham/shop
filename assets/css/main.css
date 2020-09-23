@@ -1,0 +1,65 @@
+/* Tao thanh navbar */
+
+.header {
+    height: 120px;
+    background-image: linear-gradient(0, #ff6533, #f53e2d);
+}
+
+
+/* Phan cach cac ul */
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Xoa padding tu dong cua trinh duyet */
+
+.header__navbar-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/* Khoang cach cac item */
+
+.header__navbar-item {
+    margin: 0 8px;
+    position: relative;
+}
+
+
+/* Cai dat mau,size cho item navbar */
+
+.header__navbar-item,
+.header__navbar-item-link {
+    display: inline-block;
+    /*Cac item khong xuong dong*/
+    font-size: 1.4rem;
+    color: var(--white-color);
+    text-decoration: none;
+    /*Xoa dau _ link*/
+    font-weight: 400;
+}
+
+
+/* In dam nut Dang ky, Dang nhap */
+
+.header__navbar-item--strong {
+    font-weight: 401;
+}
+
+
+/* Dau phan cach */
+
+.header__navbar-item--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 3px solid #f86c5b;
+    height: 14px;
+    right: -11px;
+    top: 50%;
+    transform: translateY(-50%);
+}
