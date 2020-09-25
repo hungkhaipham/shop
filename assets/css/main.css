@@ -17,6 +17,7 @@
 /* Xoa padding tu dong cua trinh duyet */
 
 .header__navbar-list {
+    display: inline-flex;
     list-style: none;
     padding-left: 0;
     margin-top: 4px;
@@ -44,10 +45,18 @@
     font-weight: 400;
 }
 
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link {
+    display: inline-flex;
+    align-items: center;
+}
+
 
 /* re chuot chuyen mau */
 
 .header__navbar-item:hover,
+.header__navbar-icon-link:hover,
 .header__navbar-item-link:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.7);
@@ -74,7 +83,26 @@
     transform: translateY(-50%);
 }
 
+
+/* Dieu chinh icon link*/
+
 .header__navbar-icon-link {
     color: var(--white-color);
     text-decoration: none;
+}
+
+
+/*dieu chinh icon*/
+
+.header__navbar-icon {
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+
+
+/*Tat chuyen mau va pointer tai title ket noi*/
+
+.header__navbar-title {
+    cursor: text;
+    color: var(--white-color);
 }
